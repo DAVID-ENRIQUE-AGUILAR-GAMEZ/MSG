@@ -1,0 +1,51 @@
+<div class="row ">
+  <div class="col-ms-12 caja">
+    <div class="row ">
+      <div class="col-ms-12 contenido">
+        <div class="row">
+          <div class="col-2">
+            <img src="https://www.sintesis.mx/wp-content/uploads/2017/08/4f294538ca6bb5f0e3-150209_informe_7_gc-c-1068x711.jpg" class="boxImagen">
+          </div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-3">
+                <strong>Enrique Peña Nieto</strong>
+              </div>
+              <div class="col-9">
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Regular link</a>
+                      <a class="dropdown-item active" href="#">Active link</a>
+                      <a class="dropdown-item" href="#">Another link</a>
+                    </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                ¡Mi subnick!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-11">
+      <input type="text" class="form-control" placeholder="Buscar un contacto o un número...">
+    </div>
+    <div class="col-1">
+      <img src="../../assets/msn_imgs/logo_live_add.png" class="iconoAdd">
+    </div>
+  </div>
+  <hr>
+  <strong>v Amigos (4/4)</strong>
+  <ul>
+    <li routerLink="/conversation/{{user.userId}}" *ngFor="let user of users">
+      {{user.nick}}
+    </li>
+  </ul>
+</div>
